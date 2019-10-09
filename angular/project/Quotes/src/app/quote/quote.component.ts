@@ -15,6 +15,10 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'Why so serious? >:)','The Joker - Heath Ledger'),
     new Quote(5,'They Laugh At me Because Im Different. I laugh At Then Because There all the same','The Joker - Heath Ledger'),
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit() {
